@@ -1,0 +1,1256 @@
+@keyframes slideIn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 17%;
+    opacity: 1;
+  }
+}
+@keyframes movePrice {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+* {
+  font-family: Roboto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.headers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  height: 63px;
+}
+@media (min-width: 1024px) {
+  .headers {
+    width: 1270px;
+    height: 96.34px;
+  }
+}
+
+.page1-log {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  height: 63px;
+}
+.page1-log__icon-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+.page1-log__icon-header a {
+  text-decoration: none;
+  color: inherit;
+}
+.page1-log__icon-header .fa-arrow-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(53, 53, 53);
+  font-size: 19px;
+  padding-right: 105px;
+}
+@media (min-width: 1024px) {
+  .page1-log__icon-header .fa-arrow-left {
+    margin-left: -900px;
+  }
+}
+.page1-log__logo {
+  width: 197px;
+  height: 36px;
+}
+
+.page1-img {
+  width: 375px;
+  margin-top: 0;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .page1-img {
+    width: 1270px;
+    height: 430px;
+    margin-top: -91px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-clip-path: inset(90px 0 0 0);
+            clip-path: inset(90px 0 0 0);
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-top: -56px;
+  width: 375px;
+  height: 1170px;
+  background: rgb(246, 246, 246);
+  border-radius: 40px 40px 0 0;
+}
+@media (min-width: 1024px) {
+  section {
+    margin-left: 110px;
+    width: 1055px;
+    height: 1220px;
+    margin-top: -46px;
+  }
+}
+section div {
+  display: flex;
+  flex-direction: row;
+}
+section div h1 {
+  width: 341px;
+  height: 29px;
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+  -webkit-text-stroke: 1px;
+  color: rgb(16, 16, 16);
+  margin-left: 90px;
+  margin-top: 35px;
+}
+@media (min-width: 1024px) {
+  section div h1 {
+    margin-left: 180px;
+    margin-bottom: 50px;
+  }
+}
+section div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 21px;
+  margin-top: 43px;
+  margin-right: 70px;
+}
+@media (min-width: 1024px) {
+  section div div {
+    margin-left: -20px;
+  }
+}
+section div div .checkbox {
+  margin-top: -40px;
+  display: none;
+}
+section div div .label {
+  cursor: pointer;
+  width: 23px;
+  height: 20px;
+  margin-left: -140px;
+}
+section div div i {
+  font-size: 22px;
+  opacity: 0.9;
+  padding-right: 150px;
+}
+section div div .checkbox:checked ~ .label i {
+  color: #9356DC;
+  font-weight: 900;
+}
+section article {
+  width: 349px;
+  height: 333px;
+}
+@media (min-width: 1024px) {
+  section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+section article div {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  section article div {
+    width: 634px;
+  }
+}
+section article div p {
+  width: 275px;
+  height: 27px;
+  font-size: 17px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+@media (min-width: 1024px) {
+  section article div p {
+    padding-right: 361px;
+  }
+}
+section article div div {
+  width: 40px;
+  height: 0;
+  margin-top: -15px;
+  border: 3px solid rgb(153, 226, 208);
+}
+@media (min-width: 1024px) {
+  section article div div {
+    margin-left: -518px;
+    margin-bottom: -20px;
+  }
+}
+@media (min-width: 1024px) {
+  section article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+section article div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+@media (min-width: 1024px) {
+  section article div ul {
+    width: 634px;
+    height: 270px;
+    justify-content: center;
+  }
+}
+section article div ul .list-item-1 {
+  position: relative;
+  margin-left: -40px;
+  width: 349px;
+  height: 69px;
+  border-radius: 15px 15px 15px 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-1 {
+    width: 634px;
+  }
+}
+section article div ul .list-item-1 h2 {
+  width: 267px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  margin-top: 12px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+section article div ul .list-item-1 p {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  font-size: 14px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-1 p {
+    text-wrap: nowrap;
+    width: 0;
+  }
+}
+section article div ul .list-item-1 p span {
+  margin-left: 168px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-1 p span {
+    margin-left: 448px;
+  }
+}
+section article div ul .list-item-1 label div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgb(153, 226, 208);
+  width: 56px;
+  right: -70px;
+  height: 69px;
+  border: none;
+  margin-top: -1px;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-1 label div {
+    height: 69.5px;
+  }
+}
+section article div ul .list-item-1 label div span {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+section article div ul .list-item-1 label div span i {
+  color: rgb(153, 226, 208);
+  font-size: 15px;
+  padding: 2px 0 0 2px;
+}
+section article div ul .list-item-1 .toggle-checkbox-1 {
+  display: none;
+}
+section article div ul .list-item-1 .trigger-1 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+}
+section article div ul .list-item-1 .toggle-checkbox-1:checked + .trigger-1 div {
+  animation: slideIn 0.5s forwards;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-1 .toggle-checkbox-1:hover + .trigger-1 div {
+    animation: slideIn 0.5s forwards;
+  }
+}
+section article div ul .list-item-2 {
+  position: relative;
+  margin-left: -40px;
+  width: 349px;
+  height: 69px;
+  border-radius: 15px 15px 15px 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-2 {
+    width: 634px;
+  }
+}
+section article div ul .list-item-2 h2 {
+  width: 267px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  margin-top: 12px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+section article div ul .list-item-2 p {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  font-size: 14px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-2 p {
+    text-wrap: nowrap;
+    width: 0;
+  }
+}
+section article div ul .list-item-2 p .montant-35 {
+  margin-left: 111px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-2 p .montant-35 {
+    margin-left: 392px;
+  }
+}
+section article div ul .list-item-2 label div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgb(153, 226, 208);
+  width: 56px;
+  right: -70px;
+  height: 69px;
+  border: none;
+  margin-top: -1px;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-2 label div {
+    margin-left: 634px;
+  }
+}
+section article div ul .list-item-2 label div span {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+section article div ul .list-item-2 label div span i {
+  color: rgb(153, 226, 208);
+  font-size: 15px;
+  padding: 2px 0 0 2px;
+}
+section article div ul .list-item-2 .toggle-checkbox-2 {
+  display: none;
+}
+section article div ul .list-item-2 .trigger-2 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+}
+section article div ul .list-item-2 .toggle-checkbox-2:checked + .trigger-2 div {
+  animation: slideIn 0.5s forwards;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-2 .toggle-checkbox-2:hover + .trigger-2 div {
+    animation: slideIn 0.5s forwards;
+  }
+}
+section article div ul .list-item-3 {
+  position: relative;
+  margin-left: -40px;
+  width: 349px;
+  height: 69px;
+  border-radius: 15px 15px 15px 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-3 {
+    width: 634px;
+  }
+}
+section article div ul .list-item-3 h2 {
+  width: 267px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  margin-top: 12px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+section article div ul .list-item-3 p {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  font-size: 14px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-3 p {
+    text-wrap: nowrap;
+    width: 0;
+  }
+}
+section article div ul .list-item-3 p .montant-20 {
+  margin-left: 234px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-3 p .montant-20 {
+    margin-left: 515px;
+  }
+}
+section article div ul .list-item-3 label div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgb(153, 226, 208);
+  width: 56px;
+  right: -70px;
+  height: 69px;
+  border: none;
+  margin-top: -1px;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-3 label div {
+    margin-left: 634px;
+    height: 69.5px;
+  }
+}
+section article div ul .list-item-3 label div span {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+section article div ul .list-item-3 label div span i {
+  color: rgb(153, 226, 208);
+  font-size: 15px;
+  padding: 2px 0 0 2px;
+}
+section article div ul .list-item-3 .toggle-checkbox-3 {
+  display: none;
+}
+section article div ul .list-item-3 .trigger-3 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+}
+section article div ul .list-item-3 .toggle-checkbox-3:checked + .trigger-3 div {
+  animation: slideIn 0.5s forwards;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-3 .toggle-checkbox-3:hover + .trigger-3 div {
+    animation: slideIn 0.5s forwards;
+  }
+}
+section article div ul .list-item-4 {
+  position: relative;
+  margin-left: -40px;
+  width: 349px;
+  height: 69px;
+  border-radius: 15px 15px 15px 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-4 {
+    width: 634px;
+  }
+}
+section article div ul .list-item-4 h2 {
+  width: 267px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  margin-top: 12px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+section article div ul .list-item-4 p {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  font-size: 14px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-4 p {
+    text-wrap: nowrap;
+    width: 0;
+  }
+}
+section article div ul .list-item-4 p .montant-40 {
+  margin-left: 53px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-4 p .montant-40 {
+    margin-left: 334px;
+  }
+}
+section article div ul .list-item-4 label div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgb(153, 226, 208);
+  width: 56px;
+  right: -70px;
+  height: 69px;
+  border: none;
+  margin-top: -1px;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-4 label div {
+    margin-left: 634px;
+  }
+}
+section article div ul .list-item-4 label div span {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+section article div ul .list-item-4 label div span i {
+  color: rgb(153, 226, 208);
+  font-size: 15px;
+  padding: 2px 0 0 2px;
+}
+section article div ul .list-item-4 .toggle-checkbox-4 {
+  display: none;
+}
+section article div ul .list-item-4 .trigger-4 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+}
+section article div ul .list-item-4 .toggle-checkbox-4:checked + .trigger-4 div {
+  animation: slideIn 0.5s forwards;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-4 .toggle-checkbox-4:hover + .trigger-4 div {
+    animation: slideIn 0.5s forwards;
+  }
+}
+section article div ul .list-item-5 {
+  position: relative;
+  margin-left: -40px;
+  width: 349px;
+  height: 69px;
+  border-radius: 15px 15px 15px 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-5 {
+    width: 634px;
+  }
+}
+section article div ul .list-item-5 h2 {
+  width: 267px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  margin-top: 12px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+section article div ul .list-item-5 p {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  font-size: 14px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-5 p {
+    text-wrap: nowrap;
+    width: 0;
+  }
+}
+section article div ul .list-item-5 p .montant-list {
+  margin-left: 75px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-5 p .montant-list {
+    margin-left: 357px;
+  }
+}
+section article div ul .list-item-5 label div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgb(153, 226, 208);
+  width: 56px;
+  right: -70px;
+  height: 69px;
+  border: none;
+  margin-top: -1px;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-5 label div {
+    margin-left: 634px;
+    height: 69.5px;
+  }
+}
+section article div ul .list-item-5 label div span {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+section article div ul .list-item-5 label div span i {
+  color: rgb(153, 226, 208);
+  font-size: 15px;
+  padding: 2px 0 0 2px;
+}
+section article div ul .list-item-5 .toggle-checkbox-5 {
+  display: none;
+}
+section article div ul .list-item-5 .trigger-5 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+}
+section article div ul .list-item-5 .toggle-checkbox-5:checked + .trigger-5 div {
+  animation: slideIn 0.5s forwards;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-5 .toggle-checkbox-5:hover + .trigger-5 div {
+    animation: slideIn 0.5s forwards;
+  }
+}
+section article div ul .list-item-6 {
+  position: relative;
+  margin-left: -40px;
+  width: 349px;
+  height: 69px;
+  border-radius: 15px 15px 15px 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-6 {
+    width: 634px;
+  }
+}
+section article div ul .list-item-6 h2 {
+  width: 267px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  margin-top: 12px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+section article div ul .list-item-6 p {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  font-size: 14px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-6 p {
+    text-wrap: nowrap;
+    width: 0;
+  }
+}
+section article div ul .list-item-6 p .montant-list-1 {
+  margin-left: 63px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-6 p .montant-list-1 {
+    margin-left: 345px;
+  }
+}
+section article div ul .list-item-6 label div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgb(153, 226, 208);
+  width: 56px;
+  right: -70px;
+  height: 69px;
+  border: none;
+  margin-top: -1px;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-6 label div {
+    margin-left: 634px;
+  }
+}
+section article div ul .list-item-6 label div span {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+section article div ul .list-item-6 label div span i {
+  color: rgb(153, 226, 208);
+  font-size: 15px;
+  padding: 2px 0 0 2px;
+}
+section article div ul .list-item-6 .toggle-checkbox-6 {
+  display: none;
+}
+section article div ul .list-item-6 .trigger-6 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+}
+section article div ul .list-item-6 .toggle-checkbox-6:checked + .trigger-6 div {
+  animation: slideIn 0.5s forwards;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-6 .toggle-checkbox-6:hover + .trigger-6 div {
+    animation: slideIn 0.5s forwards;
+  }
+}
+section article div ul .list-item-7 {
+  position: relative;
+  margin-left: -40px;
+  width: 349px;
+  height: 69px;
+  border-radius: 15px 15px 15px 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-7 {
+    width: 634px;
+  }
+}
+section article div ul .list-item-7 h2 {
+  width: 267px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  margin-top: 12px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+section article div ul .list-item-7 p {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  font-size: 14px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-7 p {
+    text-wrap: nowrap;
+    width: 0;
+  }
+}
+section article div ul .list-item-7 p .montant-list-2 {
+  margin-left: 154px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-7 p .montant-list-2 {
+    margin-left: 437px;
+  }
+}
+section article div ul .list-item-7 label div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgb(153, 226, 208);
+  width: 56px;
+  right: -70px;
+  height: 69px;
+  border: none;
+  margin-top: -1px;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-7 label div {
+    margin-left: 634px;
+    height: 69.5px;
+  }
+}
+section article div ul .list-item-7 label div span {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+section article div ul .list-item-7 label div span i {
+  color: rgb(153, 226, 208);
+  font-size: 15px;
+  padding: 2px 0 0 2px;
+}
+section article div ul .list-item-7 .toggle-checkbox-7 {
+  display: none;
+}
+section article div ul .list-item-7 .trigger-7 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+}
+section article div ul .list-item-7 .toggle-checkbox-7:checked + .trigger-7 div {
+  animation: slideIn 0.5s forwards;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-7 .toggle-checkbox-7:hover + .trigger-7 div {
+    animation: slideIn 0.5s forwards;
+  }
+}
+section article div ul .list-item-8 {
+  position: relative;
+  margin-left: -40px;
+  width: 349px;
+  height: 69px;
+  border-radius: 15px 15px 15px 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-8 {
+    width: 634px;
+  }
+}
+section article div ul .list-item-8 h2 {
+  width: 267px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  margin-top: 12px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+section article div ul .list-item-8 p {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  font-size: 14px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-8 p {
+    text-wrap: nowrap;
+    width: 0;
+  }
+}
+section article div ul .list-item-8 p .montant-list-3 {
+  margin-left: 235px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-8 p .montant-list-3 {
+    margin-left: 519px;
+  }
+}
+section article div ul .list-item-8 label div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgb(153, 226, 208);
+  width: 56px;
+  right: -70px;
+  height: 69px;
+  border: none;
+  margin-top: -1px;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-8 label div {
+    margin-left: 634px;
+  }
+}
+section article div ul .list-item-8 label div span {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+section article div ul .list-item-8 label div span i {
+  color: rgb(153, 226, 208);
+  font-size: 15px;
+  padding: 2px 0 0 2px;
+}
+section article div ul .list-item-8 .toggle-checkbox-8 {
+  display: none;
+}
+section article div ul .list-item-8 .trigger-8 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+}
+section article div ul .list-item-8 .toggle-checkbox-8:checked + .trigger-8 div {
+  animation: slideIn 0.5s forwards;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-8 .toggle-checkbox-8:hover + .trigger-8 div {
+    animation: slideIn 0.5s forwards;
+  }
+}
+section article div ul .list-item-9 {
+  position: relative;
+  margin-left: -40px;
+  width: 349px;
+  height: 69px;
+  border-radius: 15px 15px 15px 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-9 {
+    width: 634px;
+  }
+}
+section article div ul .list-item-9 h2 {
+  width: 267px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  margin-top: 12px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+section article div ul .list-item-9 p {
+  width: 20px;
+  height: 19px;
+  margin-top: -10px;
+  font-size: 14px;
+  padding-left: 12px;
+  text-wrap: nowrap;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-9 p {
+    text-wrap: nowrap;
+    width: 0;
+  }
+}
+section article div ul .list-item-9 p .montant-list-4 {
+  margin-left: 118px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-9 p .montant-list-4 {
+    margin-left: 404px;
+  }
+}
+section article div ul .list-item-9 label div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgb(153, 226, 208);
+  width: 56px;
+  right: -70px;
+  height: 69px;
+  border: none;
+  margin-top: -1px;
+  border-radius: 0px 15px 15px 0px;
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-9 label div {
+    margin-left: 634px;
+    height: 69.5px;
+  }
+}
+section article div ul .list-item-9 label div span {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+section article div ul .list-item-9 label div span i {
+  color: rgb(153, 226, 208);
+  font-size: 15px;
+  padding: 2px 0 0 2px;
+}
+section article div ul .list-item-9 .toggle-checkbox-9 {
+  display: none;
+}
+section article div ul .list-item-9 .trigger-9 {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+}
+section article div ul .list-item-9 .toggle-checkbox-9:checked + .trigger-9 div {
+  animation: slideIn 0.5s forwards;
+}
+@media (min-width: 1024px) {
+  section article div ul .list-item-9 .toggle-checkbox-9:hover + .trigger-9 div {
+    animation: slideIn 0.5s forwards;
+  }
+}
+section button {
+  width: 186px;
+  height: 50px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: white;
+  border: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  transition: opacity 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  section button {
+    margin-top: 10px;
+  }
+}
+section button:hover {
+  opacity: 0.9;
+  transform: scaleX(1.01);
+}
+
+footer {
+  width: 375px;
+  height: 207px;
+  background: rgb(53, 53, 53);
+  margin-top: 1110px;
+}
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1174px;
+    width: 1270px;
+    height: 114px;
+    position: relative;
+  }
+}
+footer h2 {
+  color: white;
+  width: 139px;
+  height: 27px;
+  font-family: Shrikhand;
+  font-size: 22px;
+  font-style: italic;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px;
+}
+@media (min-width: 1024px) {
+  footer h2 {
+    margin-left: 150px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+  }
+}
+footer div {
+  width: 205px;
+  height: 115px;
+  margin-top: -18px;
+}
+@media (min-width: 1024px) {
+  footer div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 77px;
+    margin-left: 470px;
+  }
+}
+footer div p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 14px;
+  width: 290px;
+  height: 25px;
+  color: white;
+  margin-top: -10px;
+  white-space: nowrap;
+}
+footer div .icon-restaurant {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+}
+footer div .icon-restaurant i {
+  margin-right: 23px;
+  width: 11px;
+  height: 13px;
+}
+footer div .icon-restaurant-2 {
+  display: flex;
+  flex-direction: row;
+  width: 165px;
+}
+footer div .icon-restaurant-2 i {
+  margin-right: 23px;
+  width: 11px;
+  height: 13px;
+}/*# sourceMappingURL=page4.css.map */
