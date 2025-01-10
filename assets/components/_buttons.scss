@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixin' as *;
+
+.titre__button{
+		width: 218px;
+		height: 50px;
+		background: $color-buttons;
+		color: rgba(255, 255, 255, 1);
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+		border: none;
+		border-radius: 30px;
+		font-size: 16px;
+		margin-top: 20px;
+		cursor: pointer;
+		transition:opacity 0.3s, transform 0.3s;
+	}
+	.titre__button:hover{
+		opacity: 0.9;
+		transform: scaleX(1.01);
+	}
+
+.button-listItam{
+	cursor: pointer !important;
+		span {
+			@include span-buttons-list
+		}
+		i{
+			@include i-buttons-list
+		}
+		.fa-store{
+			color: rgba(147, 86, 220, 1);
+		}
+			@include buttons-list
+}
+

@@ -1,0 +1,41 @@
+@use '../abstracts/mixin' as *;
+
+.list{
+    display: flex;
+	flex-direction: column;
+	width: 375px;
+	height: 440px;
+		@media (min-width: 1024px) {
+			width: 1270px;
+			height: 228.38px;
+		}
+}
+.list__titre{
+	width: 275px;
+	height: 31px;
+	margin-top: 50px;
+	margin-left: 20px;
+	font-size: 24px;
+	font-weight: bold;
+		@media (min-width: 1024px) {
+			margin-left: 112px;
+		}
+}
+.list__items{
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+		@media (min-width: 1024px) {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+
+		}
+		&--listItem{
+			width: 335px;
+			height: 72.38px;
+			list-style-type: none;
+		}
+}
+

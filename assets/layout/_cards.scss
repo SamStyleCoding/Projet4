@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as *;
+
+.cards{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	width: 375px;
+	height: 1170px;
+	background: $primary;
+	@media (min-width: 1024px) {
+		width: 1270px;
+		height: 730px;
+	}
+.cards-titre{
+	width: 275px;
+	height: 48px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-left: -60px;
+	margin-bottom: -20px;
+		@media (min-width: 1024px) {
+			width: 170px;
+			margin-left: -870px;
+		}
+}
+		div{
+			@media (min-width: 1024px) {
+				width: 1080px;
+				height: 602px;
+				gap: 100px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 8%;
+			}
+			a{
+				text-decoration: none;
+				color: inherit;
+			}
+		}
+}

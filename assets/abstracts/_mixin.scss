@@ -1,0 +1,72 @@
+@mixin buttons-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 322.49px;
+	height: 72.38px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	background: rgba(246, 246, 246, 1);
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+	margin-left: -6px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+@mixin span-buttons-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: rgba(147, 86, 220, 1);
+	font-size: 14.18px;
+	font-weight: 500;
+	border: none;
+	border-radius: 50%;
+	margin-right: 322px;
+	color: white;
+}
+
+@mixin i-buttons-list{
+	position: absolute;
+	margin-right: 230px;
+	width: 13.02px;
+	height: 19.9px;
+	color: rgba(126, 126, 126, 1);
+}
+
+@mixin list-item {
+	position: relative;
+	margin-left: -40px;
+	width: 349px;
+	height: 69px;
+	border-radius: 15px 15px 15px 15px;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+	list-style-type: none;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+@mixin list-item-titre {
+	width: 267px;
+	height: 21px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 21.09px;
+	margin-top: 12px;
+	padding-left: 12px;
+	text-wrap: nowrap;
+}
+
+@mixin list-item-p {
+	width: 20px;
+	height: 19px;
+	margin-top: -10px;
+	font-size: 14px;
+	padding-left: 12px;
+	text-wrap: nowrap;
+}
