@@ -1,8 +1,12 @@
 .headers{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 375px;
 	height: 63px;
 		@media (min-width: 1024px) {
 			width: 1270px;
+			height: 96.34px;
 		}
 }
 
@@ -14,5 +18,40 @@
 			width: 197px;
 			height: 36px;
 			padding-top: 15px;
+		}
+}
+
+.pages-log{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 375px;
+	height: 63px;
+		&__icon-header{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 30px;
+			height: 30px;
+				a{
+					text-decoration: none;
+					color: inherit;
+				}
+				.fa-arrow-left{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: rgba(53, 53, 53, 1);
+					font-size: 19px;
+					padding-right: 105px;
+						@media (min-width: 1024px) {
+							margin-left: -900px;
+						}
+			}
+		}
+		&__logo{
+			width: 197px;
+			height: 36px;
 		}
 }

@@ -10,19 +10,7 @@
 		@media (min-width: 1024px) {
 			width: 472px;
 			height: 251px;
-		}
-img{
-	position: relative;
-	width: 340px;
-	height: 231px;
-	clip-path: inset(55px 0 0 0);
-	border-radius: 15px 15px 0 0; 
-	margin-top: -57px;
-	object-fit: cover;
-		@media (min-width: 1024px) {
-			width: 492px;
-		}
-}			
+		}	
 div{
 	position: absolute;
 	display: flex;

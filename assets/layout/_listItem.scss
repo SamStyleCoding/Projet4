@@ -1,0 +1,85 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixin' as *;
+
+
+.list-item{
+	@include list-item;
+		@media (min-width: 1024px) {
+			width: 634px;
+		}
+h2{
+	@include list-item-titre;
+}
+.list-item-paraph{
+	font-size: 13px;
+	@include list-item-p;
+		@media (min-width: 1024px) {
+			text-wrap: nowrap;
+			width: 0;
+		}
+	span{
+		margin-left: 158px;
+		font-weight: bold;
+		transition: transform 1s ease;
+			@media (min-width: 1024px) {
+				margin-left: 448px;
+			}
+	}
+	.montant-35{
+	margin-left: 108px;
+	font-weight: bold;
+		@media (min-width: 1024px) {
+			margin-left: 396px;
+		}
+	}
+	.montant-20{
+		margin-left: 60px;
+		font-weight: bold;
+			@media (min-width: 1024px) {
+				margin-left: 347px;
+			}
+	}
+	.montant-40{
+		margin-left: 29px;
+		font-weight: bold;
+			@media (min-width: 1024px) {
+				margin-left: 314px;
+			}
+	}
+	.montant-list{
+		margin-left: 54px;
+		font-weight: bold;
+			@media (min-width: 1024px) {
+				margin-left: 338px;
+			}
+	}
+	.montant-list-1{
+		margin-left: 211px;
+		font-weight: bold;
+			@media (min-width: 1024px) {
+				margin-left: 495px;
+			}
+	}
+	.montant-list-2{
+		margin-left: 243px;
+		font-weight: bold;
+			@media (min-width: 1024px) {
+				margin-left: 527px;
+			}
+	}
+	.montant-list-3{
+		margin-left: 75px;
+		font-weight: bold;
+			@media (min-width: 1024px) {
+				margin-left: 358px;
+			}
+	}
+	.montant-list-4{
+		margin-left: 46px;
+		font-weight: bold;
+			@media (min-width: 1024px) {
+				margin-left: 327px;
+			}
+	}
+}										
+}

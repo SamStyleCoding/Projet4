@@ -4,6 +4,10 @@
 @use '../assets/abstracts/variables';
 
 
+// ===== animation =====
+@use '../assets/animations/animation';
+
+
 // ===== components =====
 @use '../assets/components/buttons';
 
@@ -26,3 +30,11 @@
 @use '../assets/layout/hearts';
 
 @use '../assets/layout/footer';
+
+@use '../assets/layout/images';
+
+@use '../assets/layout/section';
+
+@use '../assets/layout/listItem';
+
+@use '../assets/layout/label';

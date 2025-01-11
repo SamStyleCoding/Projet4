@@ -1,0 +1,26 @@
+.image{
+	position: relative;
+	width: 340px;
+	height: 231px;
+	clip-path: inset(55px 0 0 0);
+	border-radius: 15px 15px 0 0; 
+	margin-top: -57px;
+	object-fit: cover;
+		@media (min-width: 1024px) {
+			width: 492px;
+		}
+}
+
+.page1-img {
+	width: 375px;
+	margin-top: 0;
+	position: relative;
+	@media (min-width: 1024px) {
+		width: 1270px;
+		height: 430px;
+		margin-top: -91px;
+		object-fit: cover;
+		clip-path: inset(90px 0 0 0);
+	}
+}
+
