@@ -562,6 +562,24 @@ body {
   }
 }
 
+.footer-2 {
+  margin-top: 1000px;
+}
+@media (min-width: 1024px) {
+  .footer-2 {
+    margin-top: 1174px;
+  }
+}
+
+.footer-3 {
+  margin-top: 1180px;
+}
+@media (min-width: 1024px) {
+  .footer-3 {
+    margin-top: 1260px;
+  }
+}
+
 .image {
   position: relative;
   width: 340px;
@@ -594,6 +612,12 @@ body {
     -webkit-clip-path: inset(90px 0 0 0);
             clip-path: inset(90px 0 0 0);
   }
+}
+
+.page2-img {
+  margin-top: -97px;
+  -webkit-clip-path: inset(97px 0 0 0);
+          clip-path: inset(97px 0 0 0);
 }
 
 .pages-section {
@@ -697,6 +721,11 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  .pages-section article .page3-titre-entrees {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
   .pages-section article div {
     display: flex;
     justify-content: center;
@@ -714,6 +743,24 @@ body {
     width: 634px;
     height: 270px;
     justify-content: center;
+  }
+}
+
+.page2-section {
+  margin-top: -157px;
+}
+@media (min-width: 1024px) {
+  .page2-section {
+    margin-top: -46px;
+  }
+}
+
+.page-section-3 {
+  height: 1236px;
+}
+@media (min-width: 1024px) {
+  .page-section-3 {
+    height: 1305px;
   }
 }
 
@@ -840,6 +887,266 @@ body {
   .list-item .list-item-paraph .montant-list-4 {
     margin-left: 327px;
   }
+}
+.list-item .list-item-paraph .montant-page2-1 {
+  margin-left: 169px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page2-1 {
+    margin-left: 448px;
+  }
+}
+.list-item .list-item-paraph .montant-page2-2 {
+  margin-left: 85px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page2-2 {
+    margin-left: 365px;
+  }
+}
+.list-item .list-item-paraph .montant-page2-3 {
+  margin-left: 222px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page2-3 {
+    margin-left: 502px;
+  }
+}
+.list-item .list-item-paraph .montant-page2-4 {
+  margin-left: 160px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page2-4 {
+    margin-left: 440px;
+  }
+}
+.list-item .list-item-paraph .montant-page2-5 {
+  margin-left: 130px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page2-5 {
+    margin-left: 410px;
+  }
+}
+.list-item .list-item-paraph .montant-page2-6 {
+  margin-left: 154px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page2-6 {
+    margin-left: 435px;
+  }
+}
+.list-item .list-item-paraph .montant-page2-7 {
+  margin-left: 240px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page2-7 {
+    margin-left: 517px;
+  }
+}
+.list-item .list-item-paraph .montant-page2-8 {
+  margin-left: 230px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page2-8 {
+    margin-left: 508px;
+  }
+}
+.list-item .list-item-paraph .montant-page2-9 {
+  margin-left: 208px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page2-9 {
+    margin-left: 485px;
+  }
+}
+.list-item .list-item-paraph .montant-page3-1 {
+  margin-left: 46px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page3-1 {
+    margin-left: 326px;
+  }
+}
+.list-item .list-item-paraph .montant-page3-2 {
+  margin-left: 109px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page3-2 {
+    margin-left: 390px;
+  }
+}
+.list-item .list-item-paraph .montant-page3-3 {
+  margin-left: 114px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page3-3 {
+    margin-left: 394px;
+  }
+}
+.list-item .list-item-paraph .montant-page3-4 {
+  margin-left: 92px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page3-4 {
+    margin-left: 371px;
+  }
+}
+.list-item .list-item-paraph .montant-page3-5 {
+  margin-left: 109px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page3-5 {
+    margin-left: 389px;
+  }
+}
+.list-item .list-item-paraph .montant-page3-6 {
+  margin-left: 147px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page3-6 {
+    margin-left: 428px;
+  }
+}
+.list-item .list-item-paraph .montant-page3-7 {
+  margin-left: 72px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page3-7 {
+    margin-left: 352px;
+  }
+}
+.list-item .list-item-paraph .montant-page3-8 {
+  margin-left: 29px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page3-8 {
+    margin-left: 307px;
+  }
+}
+.list-item .list-item-paraph .montant-page3-9 {
+  margin-left: 132px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page3-9 {
+    margin-left: 410px;
+  }
+}
+.list-item .list-item-paraph .montant-page3-10 {
+  margin-left: 206px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page3-10 {
+    margin-left: 484px;
+  }
+}
+.list-item .list-item-paraph .montant-page4-1 {
+  margin-left: 168px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page4-1 {
+    margin-left: 448px;
+  }
+}
+.list-item .list-item-paraph .montant-page4-2 {
+  margin-left: 111px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page4-2 {
+    margin-left: 392px;
+  }
+}
+.list-item .list-item-paraph .montant-page4-3 {
+  margin-left: 234px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page4-3 {
+    margin-left: 515px;
+  }
+}
+.list-item .list-item-paraph .montant-page4-4 {
+  margin-left: 53px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page4-4 {
+    margin-left: 334px;
+  }
+}
+.list-item .list-item-paraph .montant-page4-5 {
+  margin-left: 75px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page4-5 {
+    margin-left: 357px;
+  }
+}
+.list-item .list-item-paraph .montant-page4-6 {
+  margin-left: 63px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page4-6 {
+    margin-left: 345px;
+  }
+}
+.list-item .list-item-paraph .montant-page4-7 {
+  margin-left: 154px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page4-7 {
+    margin-left: 437px;
+  }
+}
+.list-item .list-item-paraph .montant-page4-8 {
+  margin-left: 235px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page4-8 {
+    margin-left: 519px;
+  }
+}
+.list-item .list-item-paraph .montant-page4-9 {
+  margin-left: 118px;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .list-item .list-item-paraph .montant-page4-9 {
+    margin-left: 404px;
+  }
+}
+
+.list--itam {
+  margin-top: 60px;
+}
+
+.list-item-page3 {
+  height: 85px;
 }
 
 .trigger-1 .box-green {
