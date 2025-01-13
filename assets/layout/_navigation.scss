@@ -1,4 +1,6 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/breakpoint' as *;
+
 
 .location {
 	display: flex;
@@ -13,7 +15,7 @@
 	background: rgba(234, 234, 234, 1);
 	font-size: 18.5px;
 	color: $dark-gray;
-		@media (min-width: 1024px) {
+		@include media(md) {
 			width: 1270px;
 			box-shadow: none;
 		}

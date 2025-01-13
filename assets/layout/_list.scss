@@ -1,11 +1,13 @@
 @use '../abstracts/mixin' as *;
+@use '../abstracts/breakpoint' as *;
+
 
 .list{
     display: flex;
 	flex-direction: column;
 	width: 375px;
 	height: 440px;
-		@media (min-width: 1024px) {
+		@include media(md) {
 			width: 1270px;
 			height: 228.38px;
 		}
@@ -17,7 +19,7 @@
 	margin-left: 20px;
 	font-size: 24px;
 	font-weight: bold;
-		@media (min-width: 1024px) {
+		@include media(md) {
 			margin-left: 112px;
 		}
 }
@@ -25,12 +27,11 @@
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
-		@media (min-width: 1024px) {
+		@include media(md) {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			justify-content: center;
-
 		}
 		&--listItem{
 			width: 335px;

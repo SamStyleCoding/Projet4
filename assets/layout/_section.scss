@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixin' as *;
+@use '../abstracts/breakpoint' as *;
 
 
 .pages-section{
@@ -12,7 +13,7 @@
 	height: 1170px;
 	background: $primary;
 	border-radius: 40px 40px 0 0;
-		@media (min-width: 1024px) {
+		@include media(md) {
 			margin-left: 110px;
 			width: 1055px;
 			height: 1220px;
@@ -32,10 +33,10 @@ div{
 		color: rgba(16, 16, 16, 1);
 		margin-left: 90px;
 		margin-top: 35px;
-		@media (min-width: 1024px) {
-			margin-left: 180px;
-			margin-bottom: 50px;
-		}
+			@include media(md) {
+				margin-left: 180px;
+				margin-bottom: 50px;
+			}
 	}
 	div{
 		display: flex;
@@ -45,7 +46,7 @@ div{
 		height: 21px;
 		margin-top: 43px;
 		margin-right: 70px;
-			@media (min-width: 1024px) {
+			@include media(md) {
 				margin-left: -20px;
 			}
 	}
@@ -53,7 +54,7 @@ div{
 	article{
 		width: 349px;
 		height: 333px;
-			@media (min-width: 1024px) {
+			@include media(md) {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -62,7 +63,7 @@ div{
 	div{
 		display: flex;
 		flex-direction: column;
-			@media (min-width: 1024px) {
+			@include media(md) {
 				width: 634px;
 			}
 		p{
@@ -71,55 +72,55 @@ div{
 			font-size: 17px;
 			font-weight: 300;
 			color: rgba(0, 0, 0, 1);
-				@media (min-width: 1024px) {
-					padding-right: 361px;
-				}
+			@include media(md) {
+				padding-right: 361px;
+			}
 		}
 		div{
 			width: 40px;
 			height: 0;
 			margin-top: -15px;
 			border: $light-green;
-				@media (min-width: 1024px) {
-					margin-left: -518px;
-					margin-bottom: -20px;
-				}
+			@include media(md) {
+				margin-left: -518px;
+				margin-bottom: -20px;
+			}
 		}
 	}
 	.page3-titre-entrees{
-		@media (min-width: 1024px) {
-			margin-bottom: 24px;
+		@include media(md) {
+		    margin-bottom: 24px;
 		}
 	}
-		div{
-			@media (min-width: 1024px) {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			ul{
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				gap: 10px;
-					@media (min-width: 1024px) {
-						width: 634px;
-						height: 270px;
-						justify-content: center;
-					}			  
-			}
+	div{
+		@include media(md) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		ul{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+				@include media(md) {
+					width: 634px;
+					height: 270px;
+					justify-content: center;
+				}			  
+		}
 		}
 	}
 }
 .page2-section{
 	margin-top: -157px;
-	@media (min-width: 1024px) {
-					margin-top: -46px;
-				}
+		@include media(md) {
+			margin-top: -46px;
+		}	
 }
 .page-section-3{
 	height: 1236px;
-		@media (min-width: 1024px) {
+		@include media(md) {
 			height: 1305px;
-		}
+		}	
 }

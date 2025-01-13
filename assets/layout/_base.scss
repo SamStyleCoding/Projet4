@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoint' as *;
+
 * {
 	font-family: Roboto;
 }
@@ -7,7 +9,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	visibility: visible;
-		@media (min-width: 1024px) {
+		@include media (md) {
 			margin: 0;
 		}
 }
@@ -21,7 +23,7 @@ body{
 	height: auto;
     padding: 0 20px;
     box-sizing: border-box;
-		@media (min-width: 1024px) {
+		@include media (md) {
 			margin: 0;
 		}
 }

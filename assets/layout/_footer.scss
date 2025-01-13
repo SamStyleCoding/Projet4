@@ -1,8 +1,11 @@
+@use '../abstracts/breakpoint' as *;
+
 .footer{
 	width: 375px;
 	height: 207px;
 	background: rgba(53, 53, 53, 1);
-		@media (min-width: 1024px) {
+	overflow: hidden;
+		@include media (md) {
 			display: flex;
 			flex-direction: row;
 			width: 1270px;
@@ -22,7 +25,7 @@
 	padding-bottom: 20px;
 	font-weight: bold;
 	-webkit-text-stroke: 1px;
-		@media (min-width: 1024px) {
+		@include media (md) {
 			margin-left: 150px;
 			position: absolute;
 			right: 0;
@@ -33,7 +36,7 @@
 	width: 205px;
 	height: 115px;
 	margin-top: -18px;
-		@media (min-width: 1024px) {
+		@include media (md) {
 			display: flex;
 			flex-direction: row;
 			margin-top: 77px;
@@ -74,20 +77,20 @@
 }
 .footer-1{
 	margin-top: 1110px;
-		@media (min-width: 1024px) {
+		@include media (md) {
 			margin-top: 1174px;
 		}
 }
 .footer-2{
 	margin-top: 1000px;
-		@media (min-width: 1024px) {
+		@include media (md) {
 			margin-top: 1174px;
 		}
 }
 
 .footer-3{
 	margin-top: 1180px;
-        @media (min-width: 1024px) {
-            margin-top: 1260px;
-        }
+		@include media (md) {
+			margin-top: 1260px;
+		}
 }

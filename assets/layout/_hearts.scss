@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoint' as *;
+
 .checkbox-1{
 	margin-top: -40px;
 	display: none;
@@ -22,7 +24,7 @@
 	background-color: transparent;
 	--webkit-text-stroke: 1px black;
 	transition: all 0.3s ease;
-		@media (min-width: 1024px) {
+		@include media (md) {
 			margin-left: 150px;
 		}
 }

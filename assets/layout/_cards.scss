@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/breakpoint' as *;
 
 .cards{
 	display: flex;
@@ -8,10 +9,10 @@
 	width: 375px;
 	height: 1170px;
 	background: $primary;
-	@media (min-width: 1024px) {
-		width: 1270px;
-		height: 730px;
-	}
+		@include media(md) {
+			width: 1270px;
+			height: 730px;
+		}
 .cards-titre{
 	width: 275px;
 	height: 48px;
@@ -20,13 +21,13 @@
 	margin-top: 50px;
 	margin-left: -60px;
 	margin-bottom: -20px;
-		@media (min-width: 1024px) {
+		@include media(md) {
 			width: 170px;
 			margin-left: -870px;
 		}
 }
 	div{
-		@media (min-width: 1024px) {
+		@include media(md) {
 			width: 1080px;
 			height: 602px;
 			gap: 100px;

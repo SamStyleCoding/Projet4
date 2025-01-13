@@ -1,4 +1,6 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/breakpoint' as *;
+
 
 .titre {
 	display: flex;
@@ -8,7 +10,7 @@
 	margin-top: 11px;
 	width: 375px;
 	height: 300px;
-		@media (min-width: 1024px) {
+		@include media(md) {
 			width: 1270px;
 			margin-top: 0;
 			height: 230px;
@@ -21,7 +23,7 @@
 			display: flex;
 			justify-content: center; 
 			text-align: center;
-				@media (min-width: 1024px) {
+				@include media(md) {
 					text-wrap: nowrap;
 				}
 		}
@@ -36,10 +38,10 @@
 			line-height: 21.09px;
 			text-align: center;
 			margin-top: -10px;
-			@media (min-width: 1024px) {
-				text-wrap: nowrap;
-				font-size: 11px;
-				margin-top: -50px;
-			}
+				@include media(md) {
+					text-wrap: nowrap;
+					font-size: 11px;
+					margin-top: -50px;
+				}
 		}
 }

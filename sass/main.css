@@ -503,6 +503,7 @@ body {
   width: 375px;
   height: 207px;
   background: rgb(53, 53, 53);
+  overflow: hidden;
 }
 @media (min-width: 1024px) {
   .footer {

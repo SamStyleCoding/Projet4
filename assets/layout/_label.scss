@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoint' as *;
+
 .trigger-1{
 	.box-green{
 		display: flex;
@@ -12,7 +14,7 @@
 		margin-top: -1px;
 		border-radius: 0px 15px 15px 0px;
 		opacity: 0;
-			@media (min-width: 1024px) {
+			@include media (md) {
 				margin-left: 634px;
 				height: 71px;
 			}
@@ -48,11 +50,11 @@
 .toggle-checkbox-1:checked + .trigger-1 div {
 	animation: slideIn 0.5s forwards;
 }
-@media (min-width: 1024px) {
-	.toggle-checkbox-1:hover + .trigger-1 div {
-		animation: slideIn 0.5s forwards;
+	@include media (md) {
+		.toggle-checkbox-1:hover + .trigger-1 div {
+			animation: slideIn 0.5s forwards;
+		}
 	}
-}
 .toggle-checkbox-1:checked ~ .trigger-1 p span{
 	animation: movePrice 0.5s forwards;
 }
