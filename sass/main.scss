@@ -9,9 +9,9 @@
 // ===== animation =====
 @use '../assets/animations/animation';
 
+@use '../assets/animations/hearts';
 
-// ===== components =====
-@use '../assets/components/buttons';
+@use '../assets/animations/loader';
 
 
 // ===== layout =====
@@ -27,10 +27,6 @@
 
 @use '../assets/layout/cards';
 
-@use '../assets/layout/article';
-
-@use '../assets/layout/hearts';
-
 @use '../assets/layout/footer';
 
 @use '../assets/layout/images';
@@ -41,4 +37,8 @@
 
 @use '../assets/layout/label';
 
-@use '../assets/layout/loader';
+
+// ===== components =====
+@use '../assets/components/buttons';
+
+@use '../assets/components/article';
