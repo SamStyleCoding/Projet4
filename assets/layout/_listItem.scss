@@ -2,283 +2,84 @@
 @use '../abstracts/mixin' as *;
 @use '../abstracts/breakpoint' as *;
 
-
-.list-item{
+.list-item {
 	@include list-item;
 		@include media(md) {
 			width: 634px;
 		}
-h2{
-	@include list-item-titre;
+		.card_dish{
+			@include card-dish;
+				@include media(md) {
+					margin-top: -20px;
+				}
+				.list-item-titre {
+					@include list-item-titre;
+				}	
+				.list-item-p {
+					@include list-item-p;
+				}	
+		}
+.card_price{
+	margin-top: 33px;
+	margin-right: 15px;
+	border: none;
+	transition: 0.6s ease-in-out;
+		@include media(md) {
+			margin-top: 15px;
+		}
 }
-.list-item-paraph{
-	font-size: 13px;
-	@include list-item-p;
-		@include media(md) {
-			text-wrap: nowrap;
-			width: 0;
+.box-green{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(153, 226, 208, 1);
+	width: 56px;
+	right: -126px;
+	height: 71px;
+	border: none;
+	margin-top: -1px;
+	border-radius: 0px 15px 15px 0px;
+	transition: 0.6s ease-in-out;
+	@include media(md) {
+		margin-top: -20px;
+	}
+		span{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 20px;
+			height: 20px;
+			background-color: white;
+			border-radius: 50px;
+			i{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: rgba(153, 226, 208, 1);
+				font-size: 15px;
+				padding: 2px 2px 0 2px;
+			}
 		}
-	span{
-		margin-left: 158px;
-		font-weight: bold;
-		transition: transform 1s ease;
-			@include media(md) {
-				margin-left: 448px;
-			}
-	}
-	.montant-35{
-	margin-left: 108px;
-	font-weight: bold;
+}
+}
+.list-item:nth-child(1) {
+	animation-delay: 1s;
+}
+.list-item:nth-child(2) {
+	animation-delay: 2s;
+}
+.list-item:nth-child(3) {
+	animation-delay: 3s;
+}
+.list-item:hover .card_price{
+	transform: translateX(-200%);
 		@include media(md) {
-			margin-left: 396px;
+			transform: translateX(-135%);		
 		}
-	}
-	.montant-20{
-		margin-left: 60px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 347px;
-			}
-	}
-	.montant-40{
-		margin-left: 29px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 314px;
-			}
-	}
-	.montant-list{
-		margin-left: 54px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 338px;
-			}
-	}
-	.montant-list-1{
-		margin-left: 211px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 495px;
-			}
-	}
-	.montant-list-2{
-		margin-left: 243px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 527px;
-			}
-	}
-	.montant-list-3{
-		margin-left: 75px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 358px;
-			}
-	}
-	.montant-list-4{
-		margin-left: 46px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 327px;
-			}
-	}
-	.montant-page2-1{
-		margin-left: 169px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 448px;
-			}
-	}
-	.montant-page2-2{
-		margin-left: 85px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 365px;
-			}
-	}
-	.montant-page2-3{
-		margin-left: 222px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 502px;
-			}
-	}
-	.montant-page2-4{
-		margin-left: 160px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 440px;
-			}
-	}
-	.montant-page2-5{
-		margin-left: 130px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 410px;
-			}
-	}
-	.montant-page2-6{
-		margin-left: 154px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 435px;
-			}
-	}
-	.montant-page2-7{
-		margin-left: 240px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 517px;
-			}
-	}
-	.montant-page2-8{
-		margin-left: 230px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 508px;
-			}
-	}
-	.montant-page2-9{
-		margin-left: 208px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 485px;
-			}
-	}
-	.montant-page3-1{
-		margin-left: 46px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 326px;
-			}
-	}
-	.montant-page3-2{
-		margin-left: 109px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 390px;
-			}
-	}
-	.montant-page3-3{
-		margin-left: 114px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 394px;
-			}
-	}
-	.montant-page3-4{
-		margin-left: 92px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 371px;
-			}
-	}
-	.montant-page3-5{
-		margin-left: 109px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 389px;
-			}
-	}
-	.montant-page3-6{
-		margin-left: 147px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 428px;
-			}
-	}
-	.montant-page3-7{
-		margin-left: 72px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 352px;
-			}
-	}
-	.montant-page3-8{
-		margin-left: 29px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 307px;
-			}
-	}
-	.montant-page3-9{
-		margin-left: 132px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 410px;
-			}
-	}
-	.montant-page3-10{
-		margin-left: 206px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 484px;
-			}
-	}
-	.montant-page4-1{
-		margin-left: 168px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 448px;
-			}
-	}
-	.montant-page4-2{
-		margin-left: 111px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 392px;
-			}
-	}
-	.montant-page4-3{
-		margin-left: 234px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 515px;
-			}
-	}
-	.montant-page4-4{
-		margin-left: 53px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 334px;
-			}
-	}
-	.montant-page4-5{
-		margin-left: 75px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 357px;
-			}
-	}
-	.montant-page4-6{
-		margin-left: 63px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 345px;
-			}
-	}
-	.montant-page4-7{
-		margin-left: 154px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 437px;
-			}
-	}
-	.montant-page4-8{
-		margin-left: 235px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 519px;
-			}
-	}
-	.montant-page4-9{
-		margin-left: 118px;
-		font-weight: bold;
-			@include media(md) {
-				margin-left: 404px;
-			}
-	}
-}										
+}
+.list-item:hover .box-green{
+	transform: translateX(-100%);
 }
 
 .list--itam{
