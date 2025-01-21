@@ -6,6 +6,7 @@ body{
 	justify-content: center;
 	visibility: visible;
 	font-family: Roboto, sans-serif;
+	overflow-x: hidden;
 		@include media (md) {
 			margin: 0;
 		}
