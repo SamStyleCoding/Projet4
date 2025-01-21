@@ -688,7 +688,7 @@ body {
   list-style-type: none;
   cursor: pointer;
   overflow: hidden;
-  animation: animation-delay 1s ease-in both;
+  animation: animation-delay 0.8s ease-in both;
 }
 @media (min-width: 1024px) {
   .list-item {
@@ -775,6 +775,14 @@ body {
   padding: 2px 2px 0 2px;
 }
 
+.list--itam {
+  margin-top: 60px;
+}
+
+.list-item-page3 {
+  height: 85px;
+}
+
 .list-item:nth-child(1) {
   animation-delay: 1s;
 }
@@ -802,14 +810,6 @@ body {
 
 .list-item:hover .box-green {
   transform: translateX(-100%);
-}
-
-.list--itam {
-  margin-top: 60px;
-}
-
-.list-item-page3 {
-  height: 85px;
 }
 
 .titre__button {
