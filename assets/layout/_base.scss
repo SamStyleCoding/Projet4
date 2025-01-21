@@ -1,14 +1,11 @@
 @use '../abstracts/breakpoint' as *;
 
-* {
-	font-family: Roboto;
-}
-
 body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	visibility: visible;
+	font-family: Roboto, sans-serif;
 		@include media (md) {
 			margin: 0;
 		}
